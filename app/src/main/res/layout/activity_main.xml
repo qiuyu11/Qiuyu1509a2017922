@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffcc"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" >
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pag"
+            android:layout_weight="2"
+            ></android.support.v4.view.ViewPager>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rag"
+            android:orientation="horizontal"
+            android:layout_weight="8"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="首页"
+                android:button="@null"
+                android:background="#b34646"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="自选"
+                android:background="#b34646"
+                android:button="@null"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="行情"
+                android:background="#b34646"
+                android:button="@null"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn4"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="资讯"
+                android:background="#b34646"
+                android:button="@null"
+                />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
